@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CDA19D618C193A700AA00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA19D518C193A700AA00C7 /* Foundation.framework */; };
+		3CDA1A3C18C193DA00AA00C7 /* libAppCanEngine_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A3B18C193DA00AA00C7 /* libAppCanEngine_IOS.a */; };
+		3CDA1A3E18C1948C00AA00C7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A3D18C1948C00AA00C7 /* libz.dylib */; };
+		3CDA1A4018C1949200AA00C7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A3F18C1949200AA00C7 /* libsqlite3.dylib */; };
+		3CDA1A4218C1949900AA00C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A4118C1949900AA00C7 /* SystemConfiguration.framework */; };
+		3CDA1A4418C194A000AA00C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A4318C194A000AA00C7 /* MobileCoreServices.framework */; };
+		3CDA1A4618C194A500AA00C7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A4518C194A500AA00C7 /* CoreTelephony.framework */; };
+		3CDA1A4818C194AA00AA00C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A4718C194AA00AA00C7 /* MapKit.framework */; };
+		3CDA1A4A18C194AF00AA00C7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1A4918C194AF00AA00C7 /* AudioToolbox.framework */; };
+		3CDA1A8218C194FD00AA00C7 /* EUExSina.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A5118C194FD00AA00C7 /* EUExSina.m */; };
+		3CDA1A8318C194FD00AA00C7 /* SinaShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A5C18C194FD00AA00C7 /* SinaShareController.m */; };
+		3CDA1A8418C194FD00AA00C7 /* GTMBase64_Sina.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A6018C194FD00AA00C7 /* GTMBase64_Sina.m */; };
+		3CDA1A8618C194FD00AA00C7 /* SinaWeiBoSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A7618C194FD00AA00C7 /* SinaWeiBoSDK.m */; };
+		3CDA1A8718C194FD00AA00C7 /* WBAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A7818C194FD00AA00C7 /* WBAuthorize.m */; };
+		3CDA1A8818C194FD00AA00C7 /* WBLogInAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A7A18C194FD00AA00C7 /* WBLogInAlertView.m */; };
+		3CDA1A8918C194FD00AA00C7 /* WBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A7C18C194FD00AA00C7 /* WBRequest.m */; };
+		3CDA1A8A18C194FD00AA00C7 /* WBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1A7F18C194FD00AA00C7 /* WBUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CDA19D018C193A700AA00C7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33F81220191CF170007BC6F4 /* widget */ = {isa = PBXFileReference; lastKnownFileType = folder; path = widget; sourceTree = "<group>"; };
+		3CDA19D218C193A700AA00C7 /* uexSina.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = uexSina.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDA19D518C193A700AA00C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CDA1A3B18C193DA00AA00C7 /* libAppCanEngine_IOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCanEngine_IOS.a; path = ../libAppCanEngine_IOS.a; sourceTree = "<group>"; };
+		3CDA1A3D18C1948C00AA00C7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3CDA1A3F18C1949200AA00C7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3CDA1A4118C1949900AA00C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3CDA1A4318C194A000AA00C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3CDA1A4518C194A500AA00C7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3CDA1A4718C194AA00AA00C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3CDA1A4918C194AF00AA00C7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3CDA1A4C18C194FD00AA00C7 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		3CDA1A4D18C194FD00AA00C7 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		3CDA1A4E18C194FD00AA00C7 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		3CDA1A4F18C194FD00AA00C7 /* EUExSina-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EUExSina-Prefix.pch"; path = "EUExSina/EUExSina-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		3CDA1A5018C194FD00AA00C7 /* EUExSina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EUExSina.h; path = EUExSina/EUExSina.h; sourceTree = SOURCE_ROOT; };
+		3CDA1A5118C194FD00AA00C7 /* EUExSina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EUExSina.m; path = EUExSina/EUExSina.m; sourceTree = SOURCE_ROOT; };
+		3CDA1A5418C194FD00AA00C7 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3CDA1A5518C194FD00AA00C7 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3CDA1A5618C194FD00AA00C7 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3CDA1A5718C194FD00AA00C7 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3CDA1A5818C194FD00AA00C7 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		3CDA1A5918C194FD00AA00C7 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3CDA1A5A18C194FD00AA00C7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3CDA1A5B18C194FD00AA00C7 /* SinaShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaShareController.h; sourceTree = "<group>"; };
+		3CDA1A5C18C194FD00AA00C7 /* SinaShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaShareController.m; sourceTree = "<group>"; };
+		3CDA1A5F18C194FD00AA00C7 /* GTMBase64_Sina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64_Sina.h; sourceTree = "<group>"; };
+		3CDA1A6018C194FD00AA00C7 /* GTMBase64_Sina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64_Sina.m; sourceTree = "<group>"; };
+		3CDA1A6118C194FD00AA00C7 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		3CDA1A6418C194FD00AA00C7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		3CDA1A6518C194FD00AA00C7 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		3CDA1A6618C194FD00AA00C7 /* bg_land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_land.png; sourceTree = "<group>"; };
+		3CDA1A6718C194FD00AA00C7 /* bg_land@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_land@2x.png"; sourceTree = "<group>"; };
+		3CDA1A6818C194FD00AA00C7 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
+		3CDA1A6918C194FD00AA00C7 /* btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn@2x.png"; sourceTree = "<group>"; };
+		3CDA1A6A18C194FD00AA00C7 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		3CDA1A6B18C194FD00AA00C7 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		3CDA1A6C18C194FD00AA00C7 /* close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_btn.png; sourceTree = "<group>"; };
+		3CDA1A6D18C194FD00AA00C7 /* close_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_btn@2x.png"; sourceTree = "<group>"; };
+		3CDA1A6E18C194FD00AA00C7 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		3CDA1A6F18C194FD00AA00C7 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		3CDA1A7018C194FD00AA00C7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		3CDA1A7118C194FD00AA00C7 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		3CDA1A7318C194FD00AA00C7 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		3CDA1A7518C194FD00AA00C7 /* SinaWeiBoSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiBoSDK.h; sourceTree = "<group>"; };
+		3CDA1A7618C194FD00AA00C7 /* SinaWeiBoSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiBoSDK.m; sourceTree = "<group>"; };
+		3CDA1A7718C194FD00AA00C7 /* WBAuthorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAuthorize.h; sourceTree = "<group>"; };
+		3CDA1A7818C194FD00AA00C7 /* WBAuthorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAuthorize.m; sourceTree = "<group>"; };
+		3CDA1A7918C194FD00AA00C7 /* WBLogInAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLogInAlertView.h; sourceTree = "<group>"; };
+		3CDA1A7A18C194FD00AA00C7 /* WBLogInAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLogInAlertView.m; sourceTree = "<group>"; };
+		3CDA1A7B18C194FD00AA00C7 /* WBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBRequest.h; sourceTree = "<group>"; };
+		3CDA1A7C18C194FD00AA00C7 /* WBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBRequest.m; sourceTree = "<group>"; };
+		3CDA1A7D18C194FD00AA00C7 /* WBSDKGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKGlobal.h; sourceTree = "<group>"; };
+		3CDA1A7E18C194FD00AA00C7 /* WBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUtil.h; sourceTree = "<group>"; };
+		3CDA1A7F18C194FD00AA00C7 /* WBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUtil.m; sourceTree = "<group>"; };
+		3CDA1A8118C194FD00AA00C7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CDA19CF18C193A700AA00C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDA1A4A18C194AF00AA00C7 /* AudioToolbox.framework in Frameworks */,
+				3CDA1A4818C194AA00AA00C7 /* MapKit.framework in Frameworks */,
+				3CDA1A4618C194A500AA00C7 /* CoreTelephony.framework in Frameworks */,
+				3CDA1A4418C194A000AA00C7 /* MobileCoreServices.framework in Frameworks */,
+				3CDA1A4218C1949900AA00C7 /* SystemConfiguration.framework in Frameworks */,
+				3CDA1A4018C1949200AA00C7 /* libsqlite3.dylib in Frameworks */,
+				3CDA1A3E18C1948C00AA00C7 /* libz.dylib in Frameworks */,
+				3CDA1A3C18C193DA00AA00C7 /* libAppCanEngine_IOS.a in Frameworks */,
+				3CDA19D618C193A700AA00C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CDA19C918C193A700AA00C7 = {
+			isa = PBXGroup;
+			children = (
+				3CDA19D718C193A700AA00C7 /* uexSina */,
+				3CDA19D418C193A700AA00C7 /* Frameworks */,
+				3CDA19D318C193A700AA00C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CDA19D318C193A700AA00C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA19D218C193A700AA00C7 /* uexSina.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CDA19D418C193A700AA00C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A4918C194AF00AA00C7 /* AudioToolbox.framework */,
+				3CDA1A4718C194AA00AA00C7 /* MapKit.framework */,
+				3CDA1A4518C194A500AA00C7 /* CoreTelephony.framework */,
+				3CDA1A4318C194A000AA00C7 /* MobileCoreServices.framework */,
+				3CDA1A4118C1949900AA00C7 /* SystemConfiguration.framework */,
+				3CDA1A3F18C1949200AA00C7 /* libsqlite3.dylib */,
+				3CDA1A3D18C1948C00AA00C7 /* libz.dylib */,
+				3CDA1A3B18C193DA00AA00C7 /* libAppCanEngine_IOS.a */,
+				3CDA19D518C193A700AA00C7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CDA19D718C193A700AA00C7 /* uexSina */ = {
+			isa = PBXGroup;
+			children = (
+				33F81220191CF170007BC6F4 /* widget */,
+				3CDA1A4B18C194FD00AA00C7 /* engineHeader */,
+				3CDA1A4F18C194FD00AA00C7 /* EUExSina-Prefix.pch */,
+				3CDA1A5018C194FD00AA00C7 /* EUExSina.h */,
+				3CDA1A5118C194FD00AA00C7 /* EUExSina.m */,
+				3CDA1A5218C194FD00AA00C7 /* sourceCode */,
+			);
+			path = uexSina;
+			sourceTree = "<group>";
+		};
+		3CDA1A4B18C194FD00AA00C7 /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A4C18C194FD00AA00C7 /* EUExBase.h */,
+				3CDA1A4D18C194FD00AA00C7 /* EUExBaseDefine.h */,
+				3CDA1A4E18C194FD00AA00C7 /* EUtility.h */,
+			);
+			name = engineHeader;
+			path = EUExSina/engineHeader;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CDA1A5218C194FD00AA00C7 /* sourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A5318C194FD00AA00C7 /* JSON */,
+				3CDA1A5B18C194FD00AA00C7 /* SinaShareController.h */,
+				3CDA1A5C18C194FD00AA00C7 /* SinaShareController.m */,
+				3CDA1A5D18C194FD00AA00C7 /* SinaWeiBoSDK */,
+			);
+			name = sourceCode;
+			path = EUExSina/sourceCode;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CDA1A5318C194FD00AA00C7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A5418C194FD00AA00C7 /* JSON.h */,
+				3CDA1A5518C194FD00AA00C7 /* NSObject+SBJSON.h */,
+				3CDA1A5618C194FD00AA00C7 /* NSString+SBJSON.h */,
+				3CDA1A5718C194FD00AA00C7 /* SBJSON.h */,
+				3CDA1A5818C194FD00AA00C7 /* SBJsonBase.h */,
+				3CDA1A5918C194FD00AA00C7 /* SBJsonParser.h */,
+				3CDA1A5A18C194FD00AA00C7 /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3CDA1A5D18C194FD00AA00C7 /* SinaWeiBoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A5E18C194FD00AA00C7 /* CTMBase64 */,
+				3CDA1A6218C194FD00AA00C7 /* Resource */,
+				3CDA1A7218C194FD00AA00C7 /* SFHFKeychainUtils */,
+				3CDA1A7518C194FD00AA00C7 /* SinaWeiBoSDK.h */,
+				3CDA1A7618C194FD00AA00C7 /* SinaWeiBoSDK.m */,
+				3CDA1A7718C194FD00AA00C7 /* WBAuthorize.h */,
+				3CDA1A7818C194FD00AA00C7 /* WBAuthorize.m */,
+				3CDA1A7918C194FD00AA00C7 /* WBLogInAlertView.h */,
+				3CDA1A7A18C194FD00AA00C7 /* WBLogInAlertView.m */,
+				3CDA1A7B18C194FD00AA00C7 /* WBRequest.h */,
+				3CDA1A7C18C194FD00AA00C7 /* WBRequest.m */,
+				3CDA1A7D18C194FD00AA00C7 /* WBSDKGlobal.h */,
+				3CDA1A7E18C194FD00AA00C7 /* WBUtil.h */,
+				3CDA1A7F18C194FD00AA00C7 /* WBUtil.m */,
+				3CDA1A8018C194FD00AA00C7 /* Localizable.strings */,
+			);
+			path = SinaWeiBoSDK;
+			sourceTree = "<group>";
+		};
+		3CDA1A5E18C194FD00AA00C7 /* CTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A5F18C194FD00AA00C7 /* GTMBase64_Sina.h */,
+				3CDA1A6018C194FD00AA00C7 /* GTMBase64_Sina.m */,
+				3CDA1A6118C194FD00AA00C7 /* GTMDefines.h */,
+			);
+			path = CTMBase64;
+			sourceTree = "<group>";
+		};
+		3CDA1A6218C194FD00AA00C7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A6318C194FD00AA00C7 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3CDA1A6318C194FD00AA00C7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A6418C194FD00AA00C7 /* bg.png */,
+				3CDA1A6518C194FD00AA00C7 /* bg@2x.png */,
+				3CDA1A6618C194FD00AA00C7 /* bg_land.png */,
+				3CDA1A6718C194FD00AA00C7 /* bg_land@2x.png */,
+				3CDA1A6818C194FD00AA00C7 /* btn.png */,
+				3CDA1A6918C194FD00AA00C7 /* btn@2x.png */,
+				3CDA1A6A18C194FD00AA00C7 /* close.png */,
+				3CDA1A6B18C194FD00AA00C7 /* close@2x.png */,
+				3CDA1A6C18C194FD00AA00C7 /* close_btn.png */,
+				3CDA1A6D18C194FD00AA00C7 /* close_btn@2x.png */,
+				3CDA1A6E18C194FD00AA00C7 /* delete.png */,
+				3CDA1A6F18C194FD00AA00C7 /* delete@2x.png */,
+				3CDA1A7018C194FD00AA00C7 /* logo.png */,
+				3CDA1A7118C194FD00AA00C7 /* logo@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3CDA1A7218C194FD00AA00C7 /* SFHFKeychainUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1A7318C194FD00AA00C7 /* SFHFKeychainUtils.h */,
+			);
+			path = SFHFKeychainUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CDA19D118C193A700AA00C7 /* uexSina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CDA19F518C193A700AA00C7 /* Build configuration list for PBXNativeTarget "uexSina" */;
+			buildPhases = (
+				3CDA19CE18C193A700AA00C7 /* Sources */,
+				3CDA19CF18C193A700AA00C7 /* Frameworks */,
+				3CDA19D018C193A700AA00C7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexSina;
+			productName = uexSina;
+			productReference = 3CDA19D218C193A700AA00C7 /* uexSina.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CDA19CA18C193A700AA00C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = demo;
+			};
+			buildConfigurationList = 3CDA19CD18C193A700AA00C7 /* Build configuration list for PBXProject "uexSina" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 3CDA19C918C193A700AA00C7;
+			productRefGroup = 3CDA19D318C193A700AA00C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CDA19D118C193A700AA00C7 /* uexSina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CDA19CE18C193A700AA00C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDA1A8918C194FD00AA00C7 /* WBRequest.m in Sources */,
+				3CDA1A8718C194FD00AA00C7 /* WBAuthorize.m in Sources */,
+				3CDA1A8A18C194FD00AA00C7 /* WBUtil.m in Sources */,
+				3CDA1A8418C194FD00AA00C7 /* GTMBase64_Sina.m in Sources */,
+				3CDA1A8318C194FD00AA00C7 /* SinaShareController.m in Sources */,
+				3CDA1A8818C194FD00AA00C7 /* WBLogInAlertView.m in Sources */,
+				3CDA1A8618C194FD00AA00C7 /* SinaWeiBoSDK.m in Sources */,
+				3CDA1A8218C194FD00AA00C7 /* EUExSina.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CDA1A8018C194FD00AA00C7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CDA1A8118C194FD00AA00C7 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CDA19F318C193A700AA00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhengyi Wireless(Beijing) Technology Co., Ltd.";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexSina/";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		3CDA19F418C193A700AA00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhengyi Wireless(Beijing) Technology Co., Ltd.";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexSina/";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		3CDA19F618C193A700AA00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang GuoChun (GJL3LN9D59)";
+				DSTROOT = /tmp/uexSina.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExSina/EUExSina-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3CDA19F718C193A700AA00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang GuoChun (GJL3LN9D59)";
+				DSTROOT = /tmp/uexSina.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExSina/EUExSina-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CDA19CD18C193A700AA00C7 /* Build configuration list for PBXProject "uexSina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDA19F318C193A700AA00C7 /* Debug */,
+				3CDA19F418C193A700AA00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CDA19F518C193A700AA00C7 /* Build configuration list for PBXNativeTarget "uexSina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDA19F618C193A700AA00C7 /* Debug */,
+				3CDA19F718C193A700AA00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CDA19CA18C193A700AA00C7 /* Project object */;
+}

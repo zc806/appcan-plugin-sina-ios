@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+    <plugin
+        uexName="uexSina" version="3.0.3" build="3">
+        <info>3:取消用户新浪微博对appcan的自动关注</info>
+        <build>2:统一回调方法名，统一回调参数</build>
+        <build>1:添加uexSina.registerCallBack成功的回调,修复点击分享黑屏的bug</build>
+        <build>0:新浪分享功能插件</build>
+    </plugin>
+</uexplugins>
